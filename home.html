@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Source: https://chatgpt.com/c/6c67fd47-865c-4806-830c-8f1d6f60f1cc -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Carousel Example</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <!-- Include Slick theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Include Slick JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            background-color: #0f0f0f; /* Dark mode background color, formerly #1a1a1a */
+			
+            color: #ffffff; /* Dark mode text color */
+			background-image: url("ai-art-illustration-planet-landscape-digital-art-reflection.jpg");
+			opacity: 0.9;
+        }
+        .carousel-wrapper {
+            display: flex;
+            align-items: center; /* Align vertically in the middle */
+            justify-content: center; /* Align horizontally in the middle */
+            height: 100%; /* Set wrapper height to fill the viewport */
+        }
+        .carousel {
+            max-width: 80%; /* Set maximum width of the carousel */
+            width: 100%; /* Ensure the carousel takes full width of the wrapper */
+        }
+        .slick-slide img {
+            margin: 0 auto; /* Center the image within the slide */
+            display: block;
+            max-width: 100%; /* Ensure the image fits within the slide */
+			height: 500px; /* formerly auto*/
+        }
+		::before {
+			color: white!important;
+		}
+    </style>
+</head>
+<body>
+
+<div class="carousel-wrapper">
+    <div class="carousel">
+        <div><img max-width="20%" src="https://raw.githubusercontent.com/WolfgangNS/Sequence-Alignment-Viewer/main/screenshot.png"></div>
+        <div><img max-width="20%" src="https://raw.githubusercontent.com/WolfgangNS/GTF-to-matrix/main/Colab%20notebook%20screenshot.PNG"></div>
+        <div><img max-width="20%" src="https://raw.githubusercontent.com/WolfgangNS/GTF-to-matrix/main/Full%20WGCNA%20workup%20of%20mouthbrooding%20females.png"></div>
+        <div><img max-width="20%" src="https://github.com/WolfgangNS/OpenSNP-dendrogram/blob/main/dendrogram-v2.PNG?raw=true"></div>
+        <!-- Add more slides as needed -->
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            autoplay: false, // Autoplay the carousel
+            autoplaySpeed: 2000, // Autoplay speed in milliseconds (2 seconds)
+            dots: true, // Show dot navigation
+            infinite: true, // Loop the carousel
+            speed: 500, // Transition speed in milliseconds (0.5 second)
+            slidesToShow: 1, // Number of slides to show at a time
+            slidesToScroll: 1 // Number of slides to scroll at a time
+        });
+    });
+</script>
+
+</body>
+</html>
+
