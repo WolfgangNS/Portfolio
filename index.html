@@ -1,11 +1,10 @@
+<!-- Source: https://chatgpt.com/c/6c67fd47-865c-4806-830c-8f1d6f60f1cc -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- Source: https://chatgpt.com/c/6c67fd47-865c-4806-830c-8f1d6f60f1cc -->
-<!-- cool -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slick Carousel Example</title>
+    <title>My Portfolio</title>
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Include Slick CSS -->
@@ -19,17 +18,15 @@
             height: 100%;
             margin: 0;
             overflow-x: hidden; /* Hide horizontal scrollbar */
-            background-color: #0f0f0f; /* Dark mode background color, formerly #1a1a1a */
-			
+            background-color: #1a1a1a; /* Dark mode background color */
             color: #ffffff; /* Dark mode text color */
-			background-image: url("ai-art-illustration-planet-landscape-digital-art-reflection.jpg");
-			opacity: 0.9;
+            font-family: Arial, sans-serif;
         }
         .carousel-wrapper {
             display: flex;
             align-items: center; /* Align vertically in the middle */
             justify-content: center; /* Align horizontally in the middle */
-            height: 100%; /* Set wrapper height to fill the viewport */
+            height: 80%; /* Set wrapper height to fill the viewport */
         }
         .carousel {
             max-width: 80%; /* Set maximum width of the carousel */
@@ -38,25 +35,73 @@
         .slick-slide img {
             margin: 0 auto; /* Center the image within the slide */
             display: block;
-            max-width: 100%; /* Ensure the image fits within the slide */
-			height: 500px; /* formerly auto*/
+            max-width: 30%; /* Ensure the image fits within the slide */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .slide-content {
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
         }
 		::before {
 			color: white!important;
 		}
     </style>
+    </style>
 </head>
 <body>
 
+<h1 style="text-align: center; padding-top: 2%;">Wolfgang Stark</h1>
+
 <div class="carousel-wrapper">
     <div class="carousel">
-        <div><img max-width="20%" src="https://raw.githubusercontent.com/WolfgangNS/Sequence-Alignment-Viewer/main/screenshot.png"></div>
-        <div><img max-width="20%" src="https://raw.githubusercontent.com/WolfgangNS/GTF-to-matrix/main/Colab%20notebook%20screenshot.PNG"></div>
-        <div><img max-width="20%" src="https://raw.githubusercontent.com/WolfgangNS/GTF-to-matrix/main/Full%20WGCNA%20workup%20of%20mouthbrooding%20females.png"></div>
-        <div><img max-width="20%" src="https://github.com/WolfgangNS/OpenSNP-dendrogram/blob/main/dendrogram-v2.PNG?raw=true"></div>
-        <div><img max-width="20%" src="https://github.com/WolfgangNS/Portfolio/blob/main/snp-alignment.PNG?raw=true"></div>
+        <div>
+            <div class="slide-content">
+                <h2>Title 1</h2>
+                <p>Description of Image 1</p>
+            </div>
+			<img src="https://raw.githubusercontent.com/WolfgangNS/Sequence-Alignment-Viewer/main/screenshot.png">
+        </div>
+        <div>
+            <div class="slide-content">
+                <h2>Title 2</h2>
+                <p>Description of Image 2</p>
+            </div>
+			<img src="https://raw.githubusercontent.com/WolfgangNS/GTF-to-matrix/main/Colab%20notebook%20screenshot.PNG">
+        </div>
+        <!-- <div>
+            <div class="slide-content">
+                <h2>Title 3</h2>
+                <p>Description of Image 3</p>
+            </div>
+			<img src="https://raw.githubusercontent.com/WolfgangNS/GTF-to-matrix/main/Full%20WGCNA%20workup%20of%20mouthbrooding%20females.png">
+        </div> -->
+		<div>
+            <div class="slide-content">
+                <h2>Title 3</h2>
+                <p>Description of Image 3</p>
+            </div>
+			<img src="https://github.com/WolfgangNS/OpenSNP-dendrogram/blob/main/dendrogram-v2.PNG?raw=true">
+        </div>
         <!-- Add more slides as needed -->
     </div>
+</div>
+
+<div class="links" style="padding-bottom:2%;">
+    <a href="https://www.linkedin.com/in/wolfgang-stark-264171127/">LinkedIn</a>
+    <a href="https://github.com/WolfgangNS">GitHub</a>
+    <a href="https://cmich.joinhandshake.com/stu/users/72014">Handshake</a>
 </div>
 
 <script>
@@ -72,6 +117,9 @@
         });
     });
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
